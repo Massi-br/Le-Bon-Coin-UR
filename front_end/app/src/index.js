@@ -7,6 +7,7 @@ import Addannonce from "./components/addannonce";
 import ProfilUtilisateur from "./components/ProfilUtilisateur.js";
 import Login from "./Pages/login.jsx";
 import Signup from "./Pages/signup.jsx";
+import ModifierAnnonce from "./Pages/modifierAnnonce.js";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/Profil/addAnnonce",
     element: <Addannonce />,
+  },
+  {
+    path: "/modifier",
+    element: <ModifierAnnonce />,
   },
   {
     path: "/MesAnnonces",
