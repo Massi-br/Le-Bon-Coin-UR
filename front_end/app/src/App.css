@@ -7,20 +7,26 @@ body {
 
 .container {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .liste-annonces {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
 .annonce {
   background-color:#ffffff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+.annonce:hover {
+  transform: scale(1.02);
 }
 
 h2 {
@@ -42,12 +48,29 @@ p {
 }
 
 .barre-recherche input {
-  padding: 8px;
+  padding: 10px;
   margin-right: 8px;
 }
 
 .barre-recherche button {
-  padding: 8px 16px;
+  padding: 11px 10px;
+  background-color: #f3900e;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+button[type="button"] {
+  padding: 8px 12px;
   background-color: #f3900e;
   color: rgb(0, 0, 0);
   border: none;

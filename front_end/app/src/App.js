@@ -1,15 +1,14 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from "react";
+import "./App.css";
 
-import ListeAnnonces from './components/ListeAnnonces';
+import Acceuil from "./Pages/Acceuil";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         <h1>Leboncoin</h1>
-        <ListeAnnonces />
+        <Acceuil />
       </div>
     </div>
   );
